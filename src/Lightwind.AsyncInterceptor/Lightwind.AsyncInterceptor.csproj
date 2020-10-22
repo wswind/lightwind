@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Lightwind.AsyncInterceptor</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>wswind</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/wswind/lightwind</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/wswind/lightwind.git</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
