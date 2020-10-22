@@ -18,5 +18,5 @@ override the functions: BeforeProceed() , AfterProceedSync() , AfterProceedAsync
 to use DbConnectionFactory：
 
 1. set dbconnection string in appsettings.json 
-2. and pass the config name of it to DbConnectionFactoryExtensions.AddSingletonDbConnectionFactory() 
-3. use di to create IDbConnectionFactory
+2. pass the dbconnection string name to DbConnectionFactoryExtensions.AddSingletonDbConnectionFactory() 
+3. use IDbConnectionFactory with di
