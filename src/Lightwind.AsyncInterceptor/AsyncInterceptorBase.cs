@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Castle.DynamicProxy;
@@ -28,8 +27,8 @@ namespace Lightwind.AsyncInterceptor
 
         protected bool IsAsyncMethod(MethodInfo method)
         {
-            var attrs = method.GetCustomAttributes(true).OfType<AsyncStateMachineAttribute>().FirstOrDefault();
-            bool isAsync = (attrs != null) && typeof(Task).IsAssignableFrom(method.ReturnType);
+            var attr = method.GetCustomAttributes<AsyncStateMachineAttribute>(true);
+            bool isAsync = (attr != null) && typeof(Task).IsAssignableFrom(method.ReturnType);
             return isAsync;
         }
 
