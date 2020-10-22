@@ -36,7 +36,7 @@ namespace Lightwind.AsyncInterceptor
         private async Task InterceptAsync(Task task, IInvocation invocation)
         {
             await task.ConfigureAwait(false);
-            await AfterProceedAsync(invocation);
+            await AfterProceedAsync(invocation, false);
         }
 
         protected object ProceedAsynResult { get; private set; }
@@ -45,7 +45,7 @@ namespace Lightwind.AsyncInterceptor
         {
             TResult result = await task.ConfigureAwait(false);
             ProceedAsynResult = result;
-            await AfterProceedAsync(invocation);
+            await AfterProceedAsync(invocation,true);
             return (TResult)ProceedAsynResult;
         }
 
@@ -53,7 +53,7 @@ namespace Lightwind.AsyncInterceptor
 
         protected virtual void AfterProceedSync(IInvocation invocation) {}
 
-        protected virtual Task AfterProceedAsync(IInvocation invocation)
+        protected virtual Task AfterProceedAsync(IInvocation invocation,bool withReturnValue)
         {
             return Task.CompletedTask;
         }
