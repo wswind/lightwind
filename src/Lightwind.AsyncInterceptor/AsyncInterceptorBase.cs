@@ -11,6 +11,7 @@ namespace Lightwind.AsyncInterceptor
         public AsyncInterceptorBase()
         { 
         }
+        
         public void Intercept(IInvocation invocation)
         {
             BeforeProceed(invocation);
@@ -25,13 +26,13 @@ namespace Lightwind.AsyncInterceptor
             }
         }
 
-        protected bool IsAsyncMethod(MethodInfo method)
+        //didn't support ValueTask yet
+        protected virtual bool IsAsyncMethod(MethodInfo method)
         {
-            var attr = method.GetCustomAttributes<AsyncStateMachineAttribute>(true);
+            var attr = method.GetCustomAttributes<AsyncStateMachineAttribute>(false);
             bool isAsync = (attr != null) && typeof(Task).IsAssignableFrom(method.ReturnType);
             return isAsync;
         }
-
 
         private async Task InterceptAsync(Task task, IInvocation invocation)
         {
