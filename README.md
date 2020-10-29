@@ -13,12 +13,11 @@ dotnet add package Lightwind.DbConnection
 
 samples: <https://github.com/wswind/lightwind/tree/master/samples>
 
-AsyncinterceptorBase:
+AsyncinterceptorBase running processes:
 
-running processes:
 ![](https://img2020.cnblogs.com/blog/1114902/202010/1114902-20201023111551158-771913593.png)
 
-DbConnectionFactory：
+processes of using DbConnectionFactory：
 
 1. set dbconnection string in appsettings.json 
 2. pass the dbconnection string name to DbConnectionFactoryExtensions.AddSingletonDbConnectionFactory() 
