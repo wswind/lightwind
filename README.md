@@ -13,16 +13,17 @@ dotnet add package Lightwind.DbConnection
 
 ## Lightwind.Asyncinterceptor
 
-Lightwind.Asyncinterceptor is a help library for Async Interceptors to use with Castle.Core  
-inspired by : <https://stackoverflow.com/a/39784559/7726468>
+`Lightwind.Asyncinterceptor` is a help library for async interceptors to use with Castle.Core,
+which is inspired by : <https://stackoverflow.com/a/39784559/7726468>  
+Just create your own async interceptor class inherited from AsyncinterceptorBase to use it.
 
 AsyncinterceptorBase running processes:
+![](./doc/img/AsyncinterceptorBase-Running-Processes.png)
 
-![](.\doc\img\AsyncinterceptorBase-Running-Processes.png)
 
 
 ## Lightwind.DbConnection 
-Lightwind.DbConnection is a help library of DbConnection Factory to use with dapper/ado.net in Asp.NET Core.
+`Lightwind.DbConnection` is a help library of DbConnection Factory to use with dapper/ado.net in Asp.NET Core.
 
 Using DbConnectionFactory：
 1. set dbconnection string in appsettings.json 
