@@ -14,10 +14,11 @@ dotnet add package Lightwind.DbConnection
 ## Lightwind.Asyncinterceptor
 
 `Lightwind.Asyncinterceptor` is a help library for async interceptors to use with Castle.Core,
-which is inspired by : <https://stackoverflow.com/a/39784559/7726468>  
+which is inspired by :  
+ <https://stackoverflow.com/a/39784559/7726468>  
 Just create your own async interceptor class inherited from AsyncinterceptorBase to use it.
 
-AsyncinterceptorBase running processes:
+AsyncinterceptorBase running processes:  
 ![](./doc/img/AsyncinterceptorBase-Running-Processes.png)
 
 
