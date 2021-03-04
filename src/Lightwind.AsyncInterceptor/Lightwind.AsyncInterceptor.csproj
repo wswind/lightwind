@@ -6,9 +6,9 @@
     <Version>1.1.0</Version>
     <Authors>wswind</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/wswind/lightwind</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/wswind/lightwind/tree/master/src/Lightwind.AsyncInterceptor</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/wswind/lightwind.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/wswind/lightwind/tree/master/src/Lightwind.AsyncInterceptor</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
