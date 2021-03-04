@@ -1,9 +1,9 @@
-# ligthtwind
+# lightwind
 
-light weighted help libraries for dotnet
+light weighted help libraries for dotnet which includes:
 
-1. Lightwind.Asyncinterceptor : A AsyncinterceptorBase Class inspired by : <https://stackoverflow.com/a/39784559/7726468>
-2. Lightwind.DbConnection : DbConnectionFactory classes and extensions.
+1. Lightwind.Asyncinterceptor
+2. Lightwind.DbConnection 
 
 install with nuget:
 ```
@@ -11,14 +11,24 @@ dotnet add package Lightwind.Asyncinterceptor
 dotnet add package Lightwind.DbConnection
 ```
 
-samples: <https://github.com/wswind/lightwind/tree/master/samples>
+## Lightwind.Asyncinterceptor
+
+Lightwind.Asyncinterceptor is a help library for Async Interceptors to use with Castle.Core  
+inspired by : <https://stackoverflow.com/a/39784559/7726468>
 
 AsyncinterceptorBase running processes:
 
-![](https://img2020.cnblogs.com/blog/1114902/202010/1114902-20201023111551158-771913593.png)
+![](.\doc\img\AsyncinterceptorBase-Running-Processes.png)
 
-processes of using DbConnectionFactory：
 
+## Lightwind.DbConnection 
+Lightwind.DbConnection is a help library of DbConnection Factory to use with dapper/ado.net in Asp.NET Core.
+
+Using DbConnectionFactory：
 1. set dbconnection string in appsettings.json 
 2. pass the dbconnection string name to DbConnectionFactoryExtensions.AddSingletonDbConnectionFactory() 
 3. use IDbConnectionFactory with di
+
+
+## code samples
+samples: <https://github.com/wswind/lightwind/tree/master/samples>
