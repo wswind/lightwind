@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.0" />
-    <PackageReference Include="lightwind.asyncinterceptor" Version="1.0.4" />
+    <PackageReference Include="lightwind.asyncinterceptor" Version="1.1.1" />
   </ItemGroup>
 
 </Project>

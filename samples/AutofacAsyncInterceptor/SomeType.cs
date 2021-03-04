@@ -8,6 +8,7 @@ namespace AutofacAsyncInterceptor
         public async Task<string> ShowAsyncWithReturnValue(string input)
         {
             Console.WriteLine("Run ShowAsyncWithReturnValue Before Await");
+            Console.WriteLine(input);
             await Task.Delay(1000);
             Console.WriteLine("Run ShowAsyncWithReturnValue After Await");
             return "some type shows";
@@ -16,6 +17,7 @@ namespace AutofacAsyncInterceptor
         public async Task ShowAsync(string input)
         {
             Console.WriteLine("Run ShowAsync Before Await");
+            Console.WriteLine(input);
             await Task.Delay(1000);
             Console.WriteLine("Run ShowAsync After Await");
         }
@@ -23,6 +25,7 @@ namespace AutofacAsyncInterceptor
         public void ShowSynchronous(string input)
         {
             Console.WriteLine("Run ShowSynchronous");
+            Console.WriteLine(input);
         }
 
     

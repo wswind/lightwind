@@ -17,17 +17,17 @@ namespace AutofacAsyncInterceptor
 
         protected override void BeforeProceed(IInvocation invocation)
         {
+            _output.WriteLine("----");
             _output.WriteLine("Intercept Before");
         }
 
         protected override Task AfterProceedAsync(IInvocation invocation, bool hasAsynResult)
         {
-            _output.WriteLine("Task InterceptAsync After");
+            _output.WriteLine("InterceptAsync After");
             if(hasAsynResult)
             {
-                ProceedAsynResult = "a changed value";
+                ProceedAsyncResult = "a changed value";
             }
-
             return Task.CompletedTask;
         }
 

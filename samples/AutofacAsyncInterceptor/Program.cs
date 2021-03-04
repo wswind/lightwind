@@ -29,13 +29,12 @@ namespace AutofacAsyncInterceptor
             var container = builder.Build();
             var willBeIntercepted = container.Resolve<ISomeType>();
             //sync
-            willBeIntercepted.ShowSynchronous("this is a test ShowSynchronous");
+            willBeIntercepted.ShowSynchronous("1.this is a test ShowSynchronous");
             //async without return value
-            await willBeIntercepted.ShowAsync("this is a test ShowAsync");
+            await willBeIntercepted.ShowAsync("2.this is a test ShowAsync");
             //async with return value
-            var result = await willBeIntercepted.ShowAsyncWithReturnValue("this is a test ShowAsyncWithReturnValue");
+            var result = await willBeIntercepted.ShowAsyncWithReturnValue("3.this is a test ShowAsyncWithReturnValue");
             Console.WriteLine($"ShowAsync Return Value Is {result}");
-            
         }
     }
 }
