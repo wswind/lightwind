@@ -1,1 +1,1 @@
-inspired by : https://stackoverflow.com/a/39784559/7726468
+<https://github.com/wswind/lightwind#lightwindasyncinterceptor>
