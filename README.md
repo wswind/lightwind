@@ -1,10 +1,6 @@
 # lightwind
 
-light weighted help libraries for dotnet which includes:
-
-1. Lightwind.Asyncinterceptor
-2. Lightwind.DbConnection
-3. Lightwind.DynamicProxyExtension 
+light weighted help libraries for dotnet.
 
 install with nuget:
 ```
