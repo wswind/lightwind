@@ -1,11 +1,10 @@
 # lightwind
 
-light weighted help libraries for dotnet.
+lightweight help libraries for dotnet.
 
 install with nuget:
 ```
 dotnet add package Lightwind.Asyncinterceptor
-dotnet add package Lightwind.DbConnection
 dotnet add package Lightwind.DynamicProxyExtension
 ```
 
@@ -22,16 +21,8 @@ AsyncinterceptorBase running processes:
 sample: <https://github.com/wswind/lightwind/tree/master/samples/AutofacAsyncInterceptor>
 
 
-## Lightwind.DbConnection 
-`Lightwind.DbConnection` is a help library of DbConnection Factory to use with dapper/ado.net in Asp.NET Core.
-
-Using DbConnectionFactory：
-1. set dbconnection string in appsettings.json 
-2. pass the dbconnection string name to DbConnectionFactoryExtensions.AddSingletonDbConnectionFactory() 
-3. use IDbConnectionFactory with di
-
 ## Lightwind.DynamicProxyExtension
 
 `Lightwind.DynamicProxyExtension` is a help library to use Castle.Core with Asp.NET Core Default DI.
 
-sample: <https://github.com/wswind/Learn-AOP/tree/master/MSDIWorkWithCastle>
+sample: <https://github.com/wswind/lightwind/tree/master/samples/MSDIWorkWithCastle>

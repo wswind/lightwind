@@ -1,0 +1,1 @@
+sample of using asp.net core default di work to castle
