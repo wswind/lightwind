@@ -1,6 +1,6 @@
 # lightwind
 
-lightweight help libraries for dotnet.
+Lightweight help libraries for dotnet core, to simplify the use of Castle.Core dynamic proxy.
 
 install with nuget:
 ```
