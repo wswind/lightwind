@@ -1,6 +1,6 @@
 # lightwind
 
-Lightweight help libraries for dotnet core, to simplify the use of Castle.Core dynamic proxy.
+Lightweight help libraries for dotnet core lts.
 
 install with nuget:
 ```
@@ -10,9 +10,8 @@ dotnet add package Lightwind.DynamicProxyExtension
 
 ## Lightwind.Asyncinterceptor
 
-`Lightwind.Asyncinterceptor` is a help library for async interceptors to use with Castle.Core,
-which is inspired by :  
- <https://stackoverflow.com/a/39784559/7726468>  
+`Lightwind.Asyncinterceptor` is a help library to simplify the use of Castle.Core dynamic proxy with async interceptors.
+It is inspired by :  <https://stackoverflow.com/a/39784559/7726468>  
 Just create your own async interceptor class inherited from AsyncinterceptorBase to use it.
 
 AsyncinterceptorBase running processes:  
@@ -26,3 +25,7 @@ sample: <https://github.com/wswind/lightwind/tree/master/samples/AutofacAsyncInt
 `Lightwind.DynamicProxyExtension` is a help library to use Castle.Core with Asp.NET Core Default DI.
 
 sample: <https://github.com/wswind/lightwind/tree/master/samples/MSDIWorkWithCastle>
+
+## Lightwind.Core
+
+`Lightwind.Core` is a help library to simplify the use of swagger,nginx, and authentification with identityserver.
