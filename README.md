@@ -6,6 +6,7 @@ install with nuget:
 ```
 dotnet add package Lightwind.Asyncinterceptor
 dotnet add package Lightwind.DynamicProxyExtension
+dotnet add package Lightwind.Core
 ```
 
 ## Lightwind.Asyncinterceptor
