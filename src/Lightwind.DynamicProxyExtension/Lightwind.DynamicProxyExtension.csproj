@@ -1,14 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="..\common.props" />
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Lightwind.DynamicProxyExtension</PackageId>
-    <Version>1.0.0</Version>
-    <Authors>wswind</Authors>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/wswind/lightwind</PackageProjectUrl>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/wswind/lightwind.git</RepositoryUrl>
+    <Description>Lightwind.DynamicProxyExtension is a help library to use Castle.Core with Asp.NET Core Default DI.</Description>
   </PropertyGroup>
 
   <ItemGroup>

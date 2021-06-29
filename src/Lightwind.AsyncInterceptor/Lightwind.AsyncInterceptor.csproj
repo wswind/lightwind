@@ -1,14 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="..\common.props" />
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Lightwind.AsyncInterceptor</PackageId>
-    <Version>1.1.1</Version>
-    <Authors>wswind</Authors>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/wswind/lightwind/tree/master/src/Lightwind.AsyncInterceptor</PackageProjectUrl>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/wswind/lightwind/tree/master/src/Lightwind.AsyncInterceptor</RepositoryUrl>
+    <Description>Lightwind.Asyncinterceptor is a help library to simplify the use of Castle.Core dynamic proxy with async interceptors.</Description>
   </PropertyGroup>
 
   <ItemGroup>

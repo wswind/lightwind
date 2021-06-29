@@ -1,13 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+	<Import Project="..\common.props" />
 	<PropertyGroup>
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<PackageId>Lightwind.Core</PackageId>
-		<Version>0.1.6</Version>
-		<Authors>ws_dev@163.com</Authors>
-		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-	    <PackageProjectUrl>https://github.com/wswind/lightwind</PackageProjectUrl>
-		<Description>a simple dotnet core help library for .netcore lts (3.1)</Description>
+		<Description>Lightwind.Core is a help library to simplify the use of swagger,nginx, and authentification with identityserver.</Description>
 	</PropertyGroup>
 
 	<ItemGroup>
