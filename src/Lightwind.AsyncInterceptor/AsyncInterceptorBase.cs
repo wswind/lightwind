@@ -1,4 +1,8 @@
-﻿using System.Reflection;
+﻿// Licence: Apache-2.0
+// Author: ws_dev@163.com
+// ProjectUrl: https://github.com/wswind/lightwind
+
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Castle.DynamicProxy;

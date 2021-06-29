@@ -1,4 +1,8 @@
-﻿using Castle.DynamicProxy;
+﻿// Licence: Apache-2.0
+// Author: ws_dev@163.com
+// ProjectUrl: https://github.com/wswind/lightwind
+
+using Castle.DynamicProxy;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using System;
