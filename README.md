@@ -41,7 +41,7 @@ alternatives:  <https://github.com/castleproject/Core/blob/master/docs/dynamicpr
 ## Lightwind.DynamicProxyExtension
 
 `Lightwind.DynamicProxyExtension` is a help library for aop interceptors with just Microsoft's default IoC framework (Microsoft.Extensions.DependencyInjection) + Castle.Core.
-This package aims to help people who want to implement aop but don't like to use third party IoC frameworks (like autofac,dryioc).
+This package aims to help people who want to implement aop but don't like to use third party IoC frameworks (like autofac, dryioc).
 
 ```
 services.AddDynamicProxyService<IHelloRobot>(sp =>
@@ -51,3 +51,4 @@ services.AddDynamicProxyService<IHelloRobot>(sp =>
 ```
 
 sample: <https://github.com/wswind/lightwind/tree/main/samples/MSDIWorkWithCastle>  
+alternative: <https://github.com/khellang/Scrutor#decoration>
