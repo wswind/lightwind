@@ -51,4 +51,3 @@ services.AddDynamicProxyService<IHelloRobot>(sp =>
 ```
 
 sample: <https://github.com/wswind/lightwind/tree/main/samples/MSDIWorkWithCastle>  
-alternative: <https://github.com/khellang/Scrutor#decoration>
