@@ -21,14 +21,21 @@ namespace Lightwind.AsyncInterceptor
         public void Intercept(IInvocation invocation)
         {
             BeforeProceed(invocation);
-            invocation.Proceed();
-            if (IsAsyncMethod(invocation.MethodInvocationTarget))
+            try
             {
-                invocation.ReturnValue = InterceptAsync((dynamic)invocation.ReturnValue, invocation);
+                invocation.Proceed();
             }
-            else
+            finally
             {
-                AfterProceedSync(invocation);
+                invocation.Proceed();
+                if (IsAsyncMethod(invocation.MethodInvocationTarget))
+                {
+                    invocation.ReturnValue = InterceptAsync((dynamic)invocation.ReturnValue, invocation);
+                }
+                else
+                {
+                    AfterProceedSync(invocation);
+                }
             }
         }
 
