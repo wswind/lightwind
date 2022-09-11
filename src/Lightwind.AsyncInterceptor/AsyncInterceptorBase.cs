@@ -21,7 +21,7 @@ namespace Lightwind.AsyncInterceptor
         public void Intercept(IInvocation invocation)
         {
             BeforeProceed(invocation);
-            invocation.Proceed();
+            Procceed(invocation);
             if (IsAsyncMethod(invocation.MethodInvocationTarget))
             {
                 invocation.ReturnValue = InterceptAsync((dynamic)invocation.ReturnValue, invocation);
@@ -86,6 +86,11 @@ namespace Lightwind.AsyncInterceptor
             ProceedAsyncResult = await task.ConfigureAwait(false);
             await AfterProceedAsync(invocation, true);
             return (TResult)ProceedAsyncResult;
+        }
+
+        public virtual void Procceed(IInvocation invocation)
+        {
+            invocation.Proceed();
         }
 
         protected virtual void BeforeProceed(IInvocation invocation) { }
