@@ -1,6 +1,6 @@
 <Project>
   <PropertyGroup>
-    <Version>1.6.3</Version>
+    <Version>1.6.4</Version>
     <Authors>Vincent Wang</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <PackageProjectUrl>https://github.com/wswind/lightwind</PackageProjectUrl>
