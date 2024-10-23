@@ -16,7 +16,7 @@ It is inspired by :  <https://stackoverflow.com/a/39784559/7726468>
 
 `Lightwind.Asyncinterceptor` can work with `Autofac.Extras.DynamicProxy` to make [asynchronous method interception](https://autofac.readthedocs.io/en/latest/advanced/interceptors.html#asynchronous-method-interception) easier.  Autofac asyncinterceptor code sample can be found [here](https://github.com/wswind/lightwind/tree/main/samples/AutofacAsyncInterceptor).
 
-[中文介绍](https://www.cnblogs.com/wswind/p/autofac-asyncinterceptor.html)
+[中文介绍](https://devws.cn/posts/autofac-asyncinterceptor/)
 
 
 You can create your own async interceptor class inherited from [AsyncinterceptorBase](https://github.com/wswind/lightwind/blob/main/src/Lightwind.AsyncInterceptor/AsyncInterceptorBase.cs) to use this package.  
